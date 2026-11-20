@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lâmina — Auto clip editor for TikTok &amp; YouTube Shorts</title>
+  <meta name="description" content="Lâmina is a personal, self-hosted tool that cuts gaming clips and publishes them to your own TikTok and YouTube accounts.">
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+:root {
+  --bg: #070712;
+  --card: #12121f;
+  --text: #f4f4fb;
+  --muted: #b7b8c9;
+  --pink: #ff3cad;
+  --cyan: #22f0ff;
+  --line: rgba(255,255,255,.08);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(34,240,255,.12), transparent 50%),
+    radial-gradient(800px 500px at 100% 0%, rgba(255,60,173,.14), transparent 45%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+a { color: var(--cyan); }
+header, main, footer { width: min(860px, calc(100% - 40px)); margin: 0 auto; }
+header {
+  display: flex; align-items: center; gap: 16px;
+  padding: 28px 0 10px;
+}
+header img { width: 64px; height: 64px; border-radius: 16px; }
+header .brand { font-weight: 800; letter-spacing: .04em; font-size: 1.35rem; }
+nav { margin-left: auto; display: flex; gap: 16px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--text); }
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; margin: 24px 0 12px; }
+h2 { margin-top: 2em; }
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 42rem; }
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin: 22px 0;
+}
+.lang { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--pink); font-weight: 700; }
+ul { padding-left: 1.15rem; }
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 48px;
+  padding: 24px 0 48px;
+  color: var(--muted);
+  font-size: .95rem;
+}
+</style>
+</head>
+<body>
+  <header>
+    <img src="icon.png" width="64" height="64" alt="Lâmina icon">
+    <div class="brand">LÂMINA</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Cut. Caption. Post.<br>On your own PC.</h1>
+    <p class="lede">Lâmina is a personal, self-hosted tool that finds recent gaming videos, edits short clips, and publishes them to your own TikTok account and YouTube channel.</p>
+
+    <section class="card">
+      <div class="lang">English</div>
+      <h2>What Lâmina is</h2>
+      <p>Lâmina runs locally on the owner's Windows computer. It searches for up-to-date gaming videos and livestreams (for example GTA VI), cuts high-retention clips of at least 61 seconds, adds captions and other edit features, and posts them through the official <strong>TikTok Content Posting API</strong> and <strong>YouTube Data API</strong>.</p>
+      <ul>
+        <li>Intended for personal use on the owner's own accounts only (TikTok: Caos em Los Santos clips).</li>
+        <li>OAuth tokens stay on the local machine. Lâmina does not collect data from other users, does not show ads, and does not sell data.</li>
+        <li>Access can be revoked at any time in TikTok or Google account settings. Disconnecting in the panel or deleting local data removes the stored tokens and files on that computer.</li>
+      </ul>
+      <p>This website exists so the official developer apps can link to a public homepage, Terms of Service, and Privacy Policy.</p>
+    </section>
+
+    <section class="card">
+      <div class="lang">Português</div>
+      <h2>O que é a Lâmina</h2>
+      <p>A Lâmina é uma ferramenta pessoal que corre no computador Windows do dono. Ela procura vídeos e lives recentes de jogos (por exemplo GTA VI), corta clipes com boa retenção de pelo menos 61 segundos, adiciona legendas e outros acabamentos, e publica nas contas do próprio dono pelo <strong>TikTok Content Posting API</strong> e pelo <strong>YouTube Data API</strong>.</p>
+      <ul>
+        <li>Uso pessoal, só nas contas do dono (TikTok: Caos em Los Santos clips).</li>
+        <li>Os tokens de login ficam só no computador. A Lâmina não recolhe dados de outras pessoas, não tem anúncios e não vende dados.</li>
+        <li>Podes revogar o acesso nas definições do TikTok ou da Google. Desligar no painel ou apagar os dados locais remove os tokens e ficheiros guardados nesse PC.</li>
+      </ul>
+      <p>Este site existe para as apps oficiais de programador terem uma página inicial, uns Termos de Uso e uma Política de Privacidade públicos.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Lâmina · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+    <p>Contact: <a href="mailto:caosemlossantos.clips@gmail.com">caosemlossantos.clips@gmail.com</a></p>
+  </footer>
+</body>
+</html>

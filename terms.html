@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service — Lâmina</title>
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+:root {
+  --bg: #070712;
+  --card: #12121f;
+  --text: #f4f4fb;
+  --muted: #b7b8c9;
+  --pink: #ff3cad;
+  --cyan: #22f0ff;
+  --line: rgba(255,255,255,.08);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(34,240,255,.12), transparent 50%),
+    radial-gradient(800px 500px at 100% 0%, rgba(255,60,173,.14), transparent 45%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+a { color: var(--cyan); }
+header, main, footer { width: min(860px, calc(100% - 40px)); margin: 0 auto; }
+header {
+  display: flex; align-items: center; gap: 16px;
+  padding: 28px 0 10px;
+}
+header img { width: 64px; height: 64px; border-radius: 16px; }
+header .brand { font-weight: 800; letter-spacing: .04em; font-size: 1.35rem; }
+nav { margin-left: auto; display: flex; gap: 16px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--text); }
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; margin: 24px 0 12px; }
+h2 { margin-top: 2em; }
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 42rem; }
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin: 22px 0;
+}
+.lang { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--pink); font-weight: 700; }
+ul { padding-left: 1.15rem; }
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 48px;
+  padding: 24px 0 48px;
+  color: var(--muted);
+  font-size: .95rem;
+}
+</style>
+</head>
+<body>
+  <header>
+    <img src="icon.png" width="64" height="64" alt="Lâmina icon">
+    <div class="brand">LÂMINA</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Terms of Service</h1>
+    <p class="lede">Effective date: 20 November 2026. These terms describe how you may use Lâmina, a personal, self-hosted clip editor.</p>
+
+    <section class="card">
+      <div class="lang">English</div>
+      <h2>1. What Lâmina is</h2>
+      <p>Lâmina is a personal software tool that runs on the owner's own Windows computer. It helps find gaming videos and livestreams, edit short clips, and publish those clips to the owner's own TikTok account and YouTube channel using the official TikTok Content Posting API and YouTube Data API.</p>
+      <h2>2. Who it is for</h2>
+      <p>Lâmina is intended for personal use by its owner, on accounts the owner controls. It is not offered as a public multi-user service, a marketplace, or a hosted platform for other people.</p>
+      <h2>3. Your responsibilities</h2>
+      <ul>
+        <li>You must have the right to use the source videos you process and to publish the resulting clips.</li>
+        <li>You must follow the terms, community guidelines, and API rules of TikTok, YouTube, Google, and any other platform you connect.</li>
+        <li>You are responsible for the content that Lâmina posts from your computer to your accounts.</li>
+        <li>You should credit original creators where required or appropriate.</li>
+      </ul>
+      <h2>4. Accounts and access</h2>
+      <p>Connecting TikTok or YouTube is optional and happens through official OAuth login. Tokens are stored only on your local computer. You can revoke access at any time in your TikTok or Google account settings, or by disconnecting in the Lâmina panel or deleting local data.</p>
+      <h2>5. No warranty</h2>
+      <p>Lâmina is provided as-is, for personal use, without warranties of any kind. Platforms may change their APIs, quotas, review processes, or visibility rules (for example, TikTok may keep posts private until an app is approved). We are not responsible for account penalties, rejected posts, downtime, or lost files on your computer.</p>
+      <h2>6. Contact</h2>
+      <p>Questions about these terms: <a href="mailto:caosemlossantos.clips@gmail.com">caosemlossantos.clips@gmail.com</a>.</p>
+    </section>
+
+    <section class="card">
+      <div class="lang">Português</div>
+      <h2>1. O que é a Lâmina</h2>
+      <p>A Lâmina é um programa pessoal que corre no computador Windows do dono. Serve para encontrar vídeos e lives de jogos, editar clipes curtos e publicá-los na conta de TikTok e no canal de YouTube do próprio dono, através das APIs oficiais do TikTok e do YouTube.</p>
+      <h2>2. Para quem é</h2>
+      <p>A Lâmina destina-se a uso pessoal do dono, nas contas que ele controla. Não é um serviço público para outras pessoas, nem uma plataforma alojada na internet.</p>
+      <h2>3. As tuas responsabilidades</h2>
+      <ul>
+        <li>Tens de ter o direito de usar os vídeos de origem e de publicar os clipes resultantes.</li>
+        <li>Tens de cumprir os termos, as regras da comunidade e as regras das APIs do TikTok, do YouTube, da Google e de qualquer outra plataforma que ligares.</li>
+        <li>És responsável pelo conteúdo que a Lâmina publicar a partir do teu computador nas tuas contas.</li>
+        <li>Deves creditar os criadores originais quando for exigido ou adequado.</li>
+      </ul>
+      <h2>4. Contas e acesso</h2>
+      <p>Ligar o TikTok ou o YouTube é opcional e faz-se pelo login oficial (OAuth). Os tokens ficam só no teu computador. Podes revogar o acesso a qualquer momento nas definições do TikTok ou da Google, ou desligando no painel da Lâmina ou apagando os dados locais.</p>
+      <h2>5. Sem garantia</h2>
+      <p>A Lâmina é oferecida como está, para uso pessoal, sem garantias. As plataformas podem mudar as APIs, as cotas, as revisões ou as regras de visibilidade (por exemplo, o TikTok pode manter os posts privados até a app ser aprovada). Não nos responsabilizamos por sanções na conta, posts recusados, falhas ou ficheiros perdidos no teu computador.</p>
+      <h2>6. Contacto</h2>
+      <p>Dúvidas sobre estes termos: <a href="mailto:caosemlossantos.clips@gmail.com">caosemlossantos.clips@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Effective date: 20 November 2026 · <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
